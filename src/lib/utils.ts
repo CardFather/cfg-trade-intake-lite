@@ -1,0 +1,1 @@
+export function makeIntakeId(d=new Date(),s:number){const y=d.getFullYear();const m=String(d.getMonth()+1).padStart(2,'0');const dd=String(d.getDate()).padStart(2,'0');const ss=String(s).padStart(4,'0');return `TI-${y}-${m}-${dd}-${ss}`}
